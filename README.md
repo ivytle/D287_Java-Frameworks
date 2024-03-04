@@ -3,15 +3,19 @@
 
 #### Part C: 
 **mainscreen.html**
-* line 14: Updated shop name to "Shop Flower Knows"
-* line 16: Updated background color to pastel pink
-* line 19: updated header name to "Flower Knows Cosmetics"
+* Line 14: Updated Title to "Shop Flower Knows"
+* Line 15 - 21: Added style formatting
+  * Line 17: Added front: Courier New, Courier, monospace
+  * Line 18: Added font color - #6f5353
+  * Line 19: Added background color - #ffebef;
+* Line 26: Changed H1 to "Flower Knows Cosmetics"
 
 Customize the HTML user interface for your customer’s application. The user interface should include the shop name, the product names, and the names of the parts.
 
 _Note: Do not remove any elements that were included in the screen. You may add any additional elements you would like or any images, colors, and styles, although it is not required._
 
 #### Part D:
+
 Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
 
 #### Part E:
