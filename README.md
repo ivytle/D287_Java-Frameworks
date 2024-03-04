@@ -4,7 +4,7 @@
 #### Part C: 
 **mainscreen.html**
 * Line 14: Updated Title to "Shop Flower Knows"
-* Line 15 - 21: Added style formatting
+* Lines 15 - 21: Added style formatting
   * Line 17: Added front: Courier New, Courier, monospace
   * Line 18: Added font color - #6f5353
   * Line 19: Added background color - #ffebef;
@@ -15,6 +15,36 @@ Customize the HTML user interface for your customer’s application. The user in
 _Note: Do not remove any elements that were included in the screen. You may add any additional elements you would like or any images, colors, and styles, although it is not required._
 
 #### Part D:
+* Created a new html template called "about.html" in src > main > resources > templates
+* **about.html**
+  * Lines 4 - 6: Added Required meta tags
+  * Lines 8 - 10: Added Bootstrap CSS
+  * Lines 12 - 29: Formatting
+    * Line 12: Changed title to "About Flower Knows"
+    * Line 15: Added front - Courier New, Courier, monospace
+    * Line 16: Added background color - #ffebef
+    * Line 17: Added font color - #6f5353 
+    * Line 20: Added header background color - #ffd2db 
+    * Line 21: Added header padding 1em 
+    * Line 22: Added header text alignment - center 
+    * Line 25: Added container max width - 800px 
+    * Line 26: Added container margin - auto 
+    * Line 27: Added container padding - 20px
+  * Lines 32 - 42: Company information container 
+    * Line 34: Changed H1 to “About Us” 
+    * Line 37 - 39: Added company information
+    * Line 40: Added Home button 
+
+
+* Created new controller file named "AboutUsController.java" in src > main > java > com.example.demo > controllers
+  * **AboutUsController.java**
+    * Line 7: added @Controller 
+    * Line 9: added @GetMapping("/about") to specify URL path 
+    * Line 11: return template for about page
+
+
+* **mainscreen.html**
+  * Line 27: Added button that takes user to about page
 
 Add an “About” page to the application to describe your chosen customer’s company to web viewers and include navigation to and from the “About” page and the main screen.
 
