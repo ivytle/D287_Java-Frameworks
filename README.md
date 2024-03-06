@@ -60,6 +60,33 @@ _Note: Make sure the sample inventory is added only when both the part and produ
 
 #### Part F:
 
+* Created controller filed called **"BuyNowControlller.java"** in src > main > java > com.example.demo > controllers
+* Created new HTML file called **"confirmationbuyproduct.html"** in src > main > resources > templates
+* Created new HTML file called **"failurebuyproduct.html"** in src > main > resources > templates
+
+**mainscreen.html**
+* Line 91: Added "Buy Now" button in front of "Update" & "Delete"
+
+**ProductServiceImpl.java**
+* Line 68 - 80: Created & defined a new method function that decrements the inventory every time there is a purchase
+
+**ProductService.java**
+* Line 20: Implement the function from ProductServiceImpl.java
+
+**confirmationbuyproduct.html**
+* Line 5: Changed title to "Purchase Confirmation"
+* Line 8: Added confirmation message
+* Line 9 - 10: Link to return back to mainscreen
+
+**failurebuyproduct.html**
+* Line 5: Changed title to "Failed Purchase"
+* Line 8: Added failed message
+* Line 9 - 10: Link to return back to mainscreen
+
+**BuyNowController.java**
+* Line 19 - 43: Created code to redirect to the different html pages created 
+
+
 Add a “Buy Now” button to your product list. Your “Buy Now” button must meet each of the following parameters:
 * The “Buy Now” button must be next to the buttons that update and delete products.
 * The button should decrement the inventory of that product by one. It should not affect the inventory of any of the associated parts.
