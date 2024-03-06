@@ -93,6 +93,41 @@ Add a “Buy Now” button to your product list. Your “Buy Now” button must 
 * Display a message that indicates the success or failure of a purchase.
 
 #### Part G:
+
+**mainscreen.html**
+* Line 46 & 47: Added Minimum and Maximum inventory columns
+* Line 56 & 57: Defined thymeleaf attributes to populate columns
+
+**Part.java**
+* Lines 31 - 34: 
+* Lines 49 - 50:
+* Lines 92 - 106: 
+* Lines 116 - 118:
+
+**BootStrapData.java**
+* Lines 77 - 78: Set min and max values for part 1
+* Lines 89 - 90: Set min and max values for part 2
+* Lines 100 - 101: Set min and max values for part 3
+* Lines 111 - 112: Set min and max values for part 4
+* Lines 122 - 123: Set min and max values for part 5
+
+**InHousePartForm.html**
+* Lines 9 - 14: Added page style (background color, font, font color)
+* Lines 31 & 33: Added text input fields for minimum and maximum inventory values
+
+**OutsourcedPartForm.html**
+* Lines 8 - 14: Added page style (background color, font, font color)
+* Lines 32 & 34: Added text input fields for minimum and maximum inventory values
+
+**application.properties**
+* Line 6: renamed database and changed url to the renamed database
+
+**AddInHousePartController.java**
+* Lines 43 - 45: Added conditional statement to check if inventory falls in range, results in error message if not in range
+
+**AddOutsourcedPartController.java**
+* Lines 44 - 46: Added conditional statement to check if inventory falls in range, results in error message if not in range
+
 Modify the parts to track maximum and minimum inventory by doing the following:
 * Add additional fields to the part entity for maximum and minimum inventory.
 * Modify the sample inventory to include the maximum and minimum fields.

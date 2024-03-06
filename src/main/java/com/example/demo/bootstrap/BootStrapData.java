@@ -74,6 +74,8 @@ public class BootStrapData implements CommandLineRunner {
             o1.setInv(5);
             o1.setPrice(25.0);
             o1.setId(100L);
+            o1.setMinInv(10);
+            o1.setMaxInv(100);
             partRepository.save(o1);
             OutsourcedPart thePart1 = null;
 
@@ -84,6 +86,8 @@ public class BootStrapData implements CommandLineRunner {
             o2.setInv(6);
             o2.setPrice(30.0);
             o2.setId(200L);
+            o2.setMinInv(20);
+            o2.setMaxInv(200);
             partRepository.save(o2);
             OutsourcedPart thePart2 = null;
 
@@ -93,6 +97,8 @@ public class BootStrapData implements CommandLineRunner {
             o3.setInv(7);
             o3.setPrice(35.0);
             o3.setId(300L);
+            o3.setMinInv(30);
+            o3.setMaxInv(300);
             partRepository.save(o3);
             OutsourcedPart thePart3 = null;
 
@@ -102,6 +108,8 @@ public class BootStrapData implements CommandLineRunner {
             o4.setInv(9);
             o4.setPrice(19.0);
             o4.setId(400L);
+            o4.setMinInv(40);
+            o4.setMaxInv(240);
             partRepository.save(o4);
             OutsourcedPart thePart4 = null;
 
@@ -111,6 +119,8 @@ public class BootStrapData implements CommandLineRunner {
             o5.setInv(9);
             o5.setPrice(11.00);
             o5.setId(40L);
+            o5.setMinInv(50);
+            o5.setMaxInv(500);
             partRepository.save(o5);
             OutsourcedPart thePart5 = null;
 
