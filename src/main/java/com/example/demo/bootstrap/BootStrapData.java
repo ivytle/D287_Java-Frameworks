@@ -67,6 +67,66 @@ public class BootStrapData implements CommandLineRunner {
         productRepository.save(unicycle);
         */
 
+       if(partRepository.count() == 0 && productRepository.count() == 0) {
+            OutsourcedPart o1 = new OutsourcedPart();
+            o1.setCompanyName("Rom&nd");
+            o1.setName("Glasting Lip Tint");
+            o1.setInv(5);
+            o1.setPrice(25.0);
+            o1.setId(100L);
+            partRepository.save(o1);
+            OutsourcedPart thePart1 = null;
+
+
+            OutsourcedPart o2 = new OutsourcedPart();
+            o2.setCompanyName("CLIO");
+            o2.setName("Mesh Cover Cushion");
+            o2.setInv(6);
+            o2.setPrice(30.0);
+            o2.setId(200L);
+            partRepository.save(o2);
+            OutsourcedPart thePart2 = null;
+
+            OutsourcedPart o3 = new OutsourcedPart();
+            o3.setCompanyName("Dasique");
+            o3.setName("Coffee Eye Shadow");
+            o3.setInv(7);
+            o3.setPrice(35.0);
+            o3.setId(300L);
+            partRepository.save(o3);
+            OutsourcedPart thePart3 = null;
+
+            OutsourcedPart o4 = new OutsourcedPart();
+            o4.setCompanyName("Too Cool for School");
+            o4.setName("Art Class Contour");
+            o4.setInv(9);
+            o4.setPrice(19.0);
+            o4.setId(400L);
+            partRepository.save(o4);
+            OutsourcedPart thePart4 = null;
+
+            OutsourcedPart o5 = new OutsourcedPart();
+            o5.setCompanyName("Amuse");
+            o5.setName("Angel Blusher");
+            o5.setInv(9);
+            o5.setPrice(11.00);
+            o5.setId(40L);
+            partRepository.save(o5);
+            OutsourcedPart thePart5 = null;
+
+            Product douyin = new Product("Douyin Deluxe", 80.0, 30);
+            Product kbeauty = new Product("K-beauty Essentials", 85.0, 40);
+            Product igari = new Product("Igari Kit", 70.0, 15);
+            Product glam = new Product("Ultimate Glam", 100.0, 10);
+            Product cleangirl = new Product("Clean Girl Starter Pack", 60.0, 5);
+
+            productRepository.save(douyin);
+            productRepository.save(kbeauty);
+            productRepository.save(igari);
+            productRepository.save(glam);
+            productRepository.save(cleangirl);
+        }
+
         System.out.println("Started in Bootstrap");
         System.out.println("Number of Products"+productRepository.count());
         System.out.println(productRepository.findAll());
