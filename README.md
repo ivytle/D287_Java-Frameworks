@@ -154,6 +154,9 @@ Add validation for between or at the maximum and minimum fields. The validation 
 * Display error messages when adding and updating parts if the inventory is greater than the maximum.
 
 #### Part I:
+**PartTest.Java**
+* Lines 160 - 175: Added two unit test for maximum and minimum inventory
+
 Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
 
 #### Part J:
