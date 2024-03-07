@@ -136,6 +136,18 @@ Modify the parts to track maximum and minimum inventory by doing the following:
 * Modify the code to enforce that the inventory is between or at the minimum and maximum value.
 
 #### Part H:
+**EnufPartsValidator.java**
+* Line 37: statement to check if new parts fall below its minimum inventory level
+
+**ValidEnufParts**
+* Line 20: Added additional wording to the error message
+
+**AddInHousePartController.java**
+* Lines 47 - 51: Added validation statement to check for inventory less than the minimum and greater than the maximum
+
+**AddOutSourcePartController.java**
+* Lines 47 - 51: Added validation statement to check for inventory less than the minimum and greater than the maximum
+
 Add validation for between or at the maximum and minimum fields. The validation must include the following:
 * Display error messages for low inventory when adding and updating parts if the inventory is less than the minimum number of parts.
 * Display error messages for low inventory when adding and updating products lowers the part inventory below the minimum.

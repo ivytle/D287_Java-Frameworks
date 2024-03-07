@@ -41,7 +41,13 @@ public class AddInhousePartController{
         theModel.addAttribute("inhousepart",part);
 
         if(!part.inventoryInRange()) {
-            theBindingResult.rejectValue("inv", "invalid.inventory", "Inventory must be between minimum inventory and maximum inventory");
+            theBindingResult.rejectValue("inv", "invalid.inventory", "Inventory must be between or at the minimum and maximum value");
+        }
+
+        if(part.getInv() < part.getMinInv()) {
+            theBindingResult.rejectValue("inv", "invalid.inventory", "Inventory cannot be below the minimum inventory level");
+        } else {
+            theBindingResult.rejectValue("inv", "invalid.inventory", "Inventory cannot exceed the maximum inventory level");
         }
 
         if(theBindingResult.hasErrors()){
