@@ -160,4 +160,8 @@ Add validation for between or at the maximum and minimum fields. The validation 
 Add at least two unit tests for the maximum and minimum fields to the PartTest class in the test package.
 
 #### Part J:
+* Removed DeletePartValidator
 Remove the class files for any unused validators in order to clean your code.
+
+
+
