@@ -165,3 +165,9 @@ Remove the class files for any unused validators in order to clean your code.
 
 
 
+#### NOTES (corrections after completing project)
+**BootStrapData.java**
+* Lines 74, 86, 97, 108, 119: Updated inventory to match min and max constraints
+
+
+

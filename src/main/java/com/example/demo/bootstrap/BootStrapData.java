@@ -71,7 +71,7 @@ public class BootStrapData implements CommandLineRunner {
             OutsourcedPart o1 = new OutsourcedPart();
             o1.setCompanyName("Rom&nd");
             o1.setName("Glasting Lip Tint");
-            o1.setInv(5);
+            o1.setInv(50);
             o1.setPrice(25.0);
             o1.setId(100L);
             o1.setMinInv(10);
@@ -83,7 +83,7 @@ public class BootStrapData implements CommandLineRunner {
             OutsourcedPart o2 = new OutsourcedPart();
             o2.setCompanyName("CLIO");
             o2.setName("Mesh Cover Cushion");
-            o2.setInv(6);
+            o2.setInv(37);
             o2.setPrice(30.0);
             o2.setId(200L);
             o2.setMinInv(20);
@@ -94,7 +94,7 @@ public class BootStrapData implements CommandLineRunner {
             OutsourcedPart o3 = new OutsourcedPart();
             o3.setCompanyName("Dasique");
             o3.setName("Coffee Eye Shadow");
-            o3.setInv(7);
+            o3.setInv(45);
             o3.setPrice(35.0);
             o3.setId(300L);
             o3.setMinInv(30);
@@ -105,7 +105,7 @@ public class BootStrapData implements CommandLineRunner {
             OutsourcedPart o4 = new OutsourcedPart();
             o4.setCompanyName("Too Cool for School");
             o4.setName("Art Class Contour");
-            o4.setInv(9);
+            o4.setInv(68);
             o4.setPrice(19.0);
             o4.setId(400L);
             o4.setMinInv(40);
@@ -116,7 +116,7 @@ public class BootStrapData implements CommandLineRunner {
             OutsourcedPart o5 = new OutsourcedPart();
             o5.setCompanyName("Amuse");
             o5.setName("Angel Blusher");
-            o5.setInv(9);
+            o5.setInv(77);
             o5.setPrice(11.00);
             o5.setId(40L);
             o5.setMinInv(50);
