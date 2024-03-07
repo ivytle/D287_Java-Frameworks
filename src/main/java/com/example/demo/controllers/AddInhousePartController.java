@@ -44,13 +44,13 @@ public class AddInhousePartController{
             theBindingResult.rejectValue("inv", "invalid.inventory", "Inventory must be between or at the minimum and maximum value");
         }
 
-        if(part.getInv() < part.getMinInv()) {
-            theBindingResult.rejectValue("inv", "invalid.inventory", "Inventory cannot be below the minimum inventory level");
-        } else {
-            theBindingResult.rejectValue("inv", "invalid.inventory", "Inventory cannot exceed the maximum inventory level");
-        }
-
         if(theBindingResult.hasErrors()){
+                if (part.getInv() > part.getMinInv()) {
+                theBindingResult.rejectValue("inv", "invalid.inventory", "Inventory cannot be above the maxmimum inventory level");
+                }
+                else {
+                theBindingResult.rejectValue("inv", "invalid.inventory", "Inventory cannot be below the minimum inventory level");
+                }
             return "InhousePartForm";
         }
         else{

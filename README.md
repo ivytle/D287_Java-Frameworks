@@ -169,5 +169,11 @@ Remove the class files for any unused validators in order to clean your code.
 **BootStrapData.java**
 * Lines 74, 86, 97, 108, 119: Updated inventory to match min and max constraints
 
+**AddInHousePartController.java**
+* Lines 48 - 53: Updated issues with validations
+
+* **AddOutsourcedPartController.java**
+* Lines 49 - 54: Updated issues with validations
+
 
 

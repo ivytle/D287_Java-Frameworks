@@ -44,13 +44,14 @@ public class AddOutsourcedPartController {
         if(!part.inventoryInRange()) {
             bindingResult.rejectValue("inv", "invalid.inventory", "Inventory must be between minimum inventory and maximum inventory");
         }
-        if(part.getInv() < part.getMinInv()) {
-            bindingResult.rejectValue("inv", "invalid.inventory", "Inventory cannot be below the minimum inventory level");
-        } else {
-            bindingResult.rejectValue("inv", "invalid.inventory", "Inventory cannot exceed the maximum inventory level");
-        }
 
         if(bindingResult.hasErrors()){
+                if (part.getInv() > part.getMinInv()) {
+                    bindingResult.rejectValue("inv", "invalid.inventory", "Inventory cannot be above the maxmimum inventory level");
+                }
+                else {
+                    bindingResult.rejectValue("inv", "invalid.inventory", "Inventory cannot be below the minimum inventory level");
+                }
             return "OutsourcedPartForm";
         }
         else{
