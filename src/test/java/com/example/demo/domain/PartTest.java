@@ -167,7 +167,7 @@ class PartTest {
     }
     @Test
     public void testMaxInventory() {
-        int maxInventory = 50;
+        int maxInventory = 400;
         partIn.setMaxInv(maxInventory);
         assertEquals(maxInventory,partIn.getMaxInv());
         partOut.setMaxInv(maxInventory);
